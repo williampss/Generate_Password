@@ -35,7 +35,6 @@ export function Routes(){
                 tabBarIcon:({focused,size,color}) => {
                 if(focused){
                     return<Ionicons  size={size} color={color} name="lock-closed"/>
-
                 }
 
                 return<Ionicons  size={size} color={color} name="lock-closed-outline"/>
@@ -49,3 +48,4 @@ export function Routes(){
         </Tab.Navigator>
     )
 }
+

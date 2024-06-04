@@ -4,7 +4,7 @@ const useStorage = () => {
     const getItem = async (key) => {
         try{
             const passwords = await AsyncStorage.getItem(key);
-            return JSON.parse(passwords);
+            return JSON.parse(passwords) || [];
 
         }catch(error){
             console.log('Erro de busca', error)
