@@ -6,6 +6,7 @@ import useStorage from '../../hooks/useStorage'
 import {PasswordItem} from './components/passwordItem'
 
 export function Passwords(){
+
     const[listPassswords, setListPassswords] = useState([])
     const focused = useIsFocused ();
     const { getItem, removeItem } = useStorage ();
